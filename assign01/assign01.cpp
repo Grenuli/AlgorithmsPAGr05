@@ -59,7 +59,7 @@ void Graph::dijkstra(int src)
 		  list< pair<int, int> >::iterator checkVertex;
 		  checkVertex = adj[selectedVertex].begin();
 
-		  for(checkVertex; checkVertex != adj[selectedVertex].end(); ++checkVertex)
+		  for( ; checkVertex != adj[selectedVertex].end(); ++checkVertex)
 		  {
 			  int checkVertexWeight = (*checkVertex).second;
 			  int checkVertexLabel = (*checkVertex).first;
